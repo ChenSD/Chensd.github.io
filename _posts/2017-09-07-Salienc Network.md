@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  Brain Networks
-date:   2017-09-07 23:10:20
-categories: Brain
+date:   2017-09-07
+tags: [Brain]
+comments: true
+toc: true
 ---
 
 # Salience network 突显网络
