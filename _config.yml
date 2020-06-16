@@ -23,13 +23,11 @@ baseurl:
 # 下面的设定都是可选的
 #
 
-
-
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: images/logo.png
+avatar: 
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: images/favicon.png
+favicon: 
 
 
 # 菜单中的按钮
@@ -54,10 +52,10 @@ footer-links:
   weibo:  #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
+  email: csddyx@outlook.com 
   facebook: #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
+  github:  #https://github.com/<>
   instagram: #https://instagram.com/<>
   linkedin: #https://www.linkedin.com/in/<>
   pinterest: #https://www.pinterest.com/<>
