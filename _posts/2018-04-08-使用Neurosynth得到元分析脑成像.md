@@ -1,0 +1,37 @@
+---
+layout: post
+title:  Neurosynth
+date:   2018-04-08 22:50:20
+categories: Programming
+---
+
+# Background
+
+* 由于人类脑影像数据的迅速发展，研究者们越来越难以汇聚（aggregate）和综合（synthesis）脑影像的发现。Tal Yarkoni等人开发了一种方法，利用元分析和计算机学习等方法得到了神经-认知状态之间大量的数据图片。这种方法可解决脑影像分析中的推论问题，以及从脑影像数据解码（deconding）认知活动的问题。
+* Neurosynth就是Tal Yarkoni等人方法转化的成果，是一个可以在线即时对脑影像数据产生元分析图谱的工具。Neurosynth允许用户通过输入任何与脑影像相关的关键词来产生元分析图谱。
+
+![](http://p24kfvgv3.bkt.clouddn.com/18-4-8/26183854.jpg)
+
+# How to use
+
+## Maps菜单
+* Neurosynth的使用直观易学。只需要在搜索框中输入关键词（例如“pain”或者“cognitive control”），就能即时地产生与关键词相关的统计图谱。
+* 激活图谱可以利用可选项进行深入分析，可选项主要包括：
+  1. forward inference
+  2. reverse inference
+  3. the consistency of that activation across studies
+  4. the probability that you would observe the reporting of a term given a particular location
+  5. anotimical（底板）
+* 激活图谱的呈现方式类似于PS，采用图层（Layers）的方式。
+* 点击绿色的What'here? ，可以得到以这个点为中心的静息态功能连接或元分析共同激活图谱（Functional connectivity and coactivation maps）。例如选取PCC为点，点击What'here?，就可以得到默认网络的激活图。
+* 最终的图谱可以导出为NIFTI格式的文件，然后用于多种用途。例如综述插图，或者制作感兴趣区域的masks。
+
+## Studies and Associations菜单
+* Studies。Neurosynth also serves as an excellent education tool for learning what specific regions are associated with which cognitive processes and which author's work.
+* Associations。人们可以查看以当前体素为种子点与全脑其他体素的功能连接表。
+
+
+
+# References
+
+Yarkoni, T., et al. (2011). "Large-scale automated synthesis of human functional neuroimaging data." Nature Methods 8(8): 665.
