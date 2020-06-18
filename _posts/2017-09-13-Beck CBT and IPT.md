@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Beck CBT, IPT and EFT
-date:   2017-09-13 23:10:20 +0800
-categories: Emotional-Disorders-and-Treatment
+date:   2017-09-13
+tags: [Disorders]
 ---
 # 14th day
 
