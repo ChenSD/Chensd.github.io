@@ -3,6 +3,7 @@ layout: post
 title:  Rumination （冗思）的三大理论和典型研究
 date:   2017-09-19 23:10:20 +0800
 tags: [Disorders]
+toc: true
 ---
 
 # Rumination （冗思）
