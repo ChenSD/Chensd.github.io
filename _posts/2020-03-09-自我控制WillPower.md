@@ -2,7 +2,7 @@
 layout: post
 title:  自我控制Willpower
 date:   2020-03-29 23:10:20
-categories: Cognition
+tags: [Cognition]
 ---
 
 # 自我控制和个体成长

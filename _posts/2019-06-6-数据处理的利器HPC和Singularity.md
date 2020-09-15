@@ -2,7 +2,7 @@
 layout: post
 title:   数据处理的利器HPC和Singularity
 date:   2019-06-6 22:10:20
-categories: toolbox
+tags: [toolbox]
 ---
 
 # What HPC and Container technology (Docker and Singularity)

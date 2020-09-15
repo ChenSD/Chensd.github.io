@@ -2,7 +2,7 @@
 layout: post
 title:  Recent Reappraisal studies 2019
 date:   2019-11-27 16:10:20
-categories: Emotion
+tags: [Emotion]
 ---
 
 # Review
