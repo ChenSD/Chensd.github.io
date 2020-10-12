@@ -2,7 +2,7 @@
 layout: post
 title:   PostfMRIprocessing
 date:   2019-06-9 22:10:20
-categories: toolbox
+tags: [toolbox]
 ---
 
 ## FSL

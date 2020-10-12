@@ -2,7 +2,7 @@
 layout: post
 title:  How emotions are made
 date:   2020-03-06 22:10:20
-categories: Emotion
+tags: [Emotion]
 ---
 
 # 知乎王崇魏老师报告
@@ -12,3 +12,7 @@ categories: Emotion
 * 这一点的启发是：
     首先要学会照顾好身体，让生理舒适。例如保证充足的睡眠，营养充足的早餐，锻炼身体。 
 	其次，要学会辨别情绪。情绪辨别本身也具有一定的情绪调节效果。
+	
+# 参考文献
+
+1. Lisa Feldman Barrett，《How emotions are made》

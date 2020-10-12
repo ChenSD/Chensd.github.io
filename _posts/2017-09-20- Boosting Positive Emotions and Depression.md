@@ -2,7 +2,7 @@
 layout: post
 title:  积极情绪干预
 date:   2017-09-20 23:10:20 +0800
-categories: Emotional-Disorders-and-Treatment
+tags: [Disorders]
 ---
 
 
