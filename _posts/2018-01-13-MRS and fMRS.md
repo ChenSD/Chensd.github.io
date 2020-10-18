@@ -2,7 +2,7 @@
 layout: post
 title:   磁共振波普成像 MRS and fMRS
 date:   2018-01-13 22:10:20
-categories: toolbox
+tags: [toolbox]
 ---
 
 # Basic terms
