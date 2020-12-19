@@ -9,7 +9,9 @@ permalink: /about/
 * 姓名: 陈圣栋
 * 英文名: Shelton Chen
 * 专业: 应用心理学
+* 学位：情绪认知科学方向博士 (2017-2020)
 * 毕业学校：西南大学
+* 任职单位: 曲阜师范大学心理学院
 * 研究方向: 情绪调节与心理健康
 * 常用技术: EEG, fMRI
 * Email: csddyx@outlook.com
@@ -30,4 +32,3 @@ permalink: /about/
 12.	Ma Bin, Meng Xianxin, Long Quanshan, Zhang Zhongming, **Chen Shengdong**, Yang Jiemin, Xuan Zhang, Yuan Jiajin.  Automatic self-focused and situation-focused reappraisal of disgusting emotion by implementation intention: an ERP study. Cognitive Neurodynamics (ISSN 1871-4080), WOS:000501013000007, 2019,中科院SCI三区.
 
 注：个人姓名加粗表示，*表示共同第一作者
-
