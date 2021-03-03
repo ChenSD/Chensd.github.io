@@ -33,7 +33,7 @@ tags: [toolbox]
 
 ## Plans of Data analysis
 
-### 1. Preprocessing and first-level analysis 
+### 1. Preprocessing and first-level analysis
 
 1. 预处理，所有被试一起分析；注意预处理方法（ComCorr/AROMA）的选择和质量控制。
 2. 个体分析。实验设计为：组间*前后测。前后测的数据分开处理，建立两个文件夹（pre/post）；
@@ -72,12 +72,12 @@ tags: [toolbox]
 Use the toolbox [Dcm2Bids](https://github.com/cbedetti/Dcm2Bids)
 
 1. Install: ``pip install dcm2bids``
-2. Usage: 
+2. Usage:
     1. cd <YOUR_FUTURE_BIDS_FOLDER>
     2. Build your configuration file with the help of the content of [tmp_dcm2bids/helper](https://cbedetti.github.io/Dcm2Bids/tutorial/#building-the-configuration-file)     	
-	3. ``dcm2bids -d DICOM_DIR -p {01..60} -c CONFIG_FILE`` 
+	3. ``dcm2bids -d DICOM_DIR -p {01..60} -c CONFIG_FILE``
 3. Run the bids-validator to check your directory.
-	
+
 ## BIDS APPs
 
 1. Preprocessing: fmriprep
@@ -92,7 +92,7 @@ Use the toolbox [Dcm2Bids](https://github.com/cbedetti/Dcm2Bids)
 1. [安装docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 2. [Docker 创建docker用户组，应用用户加入docker组](https://blog.csdn.net/point0mine/article/details/79448402)
 install docter and add the current user to the docker group. install  ``pip install --user --upgrade fmriprep-docker``
-3. [Add fmriprep path to your PATH environment variable](https://neurostars.org/t/fmriprep-docker-command/4105/6) 
+3. [Add fmriprep path to your PATH environment variable](https://neurostars.org/t/fmriprep-docker-command/4105/6)
 
 ## 1. 将数据整理为BIDS格式
 
@@ -114,7 +114,7 @@ install docter and add the current user to the docker group. install  ``pip inst
 2. [fMRIPrep tutorial](https://dartbrains.org/features/notebooks/8_fmriprep_tutorial.html)
 3. [Neurostars the form to post questions and learn from others](https://neurostars.org/)
 4.  
-```fmriprep-docker /input_bids_dir /output_dir participant 
+```fmriprep-docker /input_bids_dir /output_dir participant
 --participant-label 01 --fs-license-file /data/fMRI/freesurfer_license.txt --ignore slicetiming```
 
 ### 必选项
@@ -128,15 +128,15 @@ install docter and add the current user to the docker group. install  ``pip inst
 ### 常用选项
 
 1. --work-dir or -w  存储中间文件的路径
-  
-2. --use-aroma option  will internally smooth the data in the same way as described in the original ICA-AROMA paper (6mm FWHM)((https://doi.org/10.1016/j.neuroimage.2015.02.064 ). Most outputs will stay unsmoothed, however the *bold_space-<space>_variant-smoothAROMAnonaggr_preproc.nii.gz files will be smoothed. 
+
+2. --use-aroma option  will internally smooth the data in the same way as described in the original ICA-AROMA paper (6mm FWHM)((https://doi.org/10.1016/j.neuroimage.2015.02.064 ). Most outputs will stay unsmoothed, however the *bold_space-<space>_variant-smoothAROMAnonaggr_preproc.nii.gz files will be smoothed.
 Note that if you use the variant-AROMAnonaggr version of the outputs, then you will not want to use the Aggressive AROMA regressors nor other motion regressors in your modeling. Otherwise, you risk re-introducing noise. As you mention, if you use variant-AROMAnonaggr then do not apply any additional spatial filtering (as SUSAN has been applied). No temporal filtering is performed on the variant-AROMAnonaggr outputs (therefore, you’ll need to insert that step in your analysis workflows)(https://neurostars.org/t/fmriprep-smoothing-option/259/14). If your modeling is designed to use such regressors, then you shouldn’t pick the variant-AROMAnonaggr outputs
 Note that due to ICA-AROMA being run MNI152NLin6 will be automatically added.
 
-3. --use-syn-sdc: “In the absence of direct measurements of fieldmap data, 
-we provide an (experimental) option to estimate the susceptibility distortion 
-based on the [ANTs symmetric normalization (SyN) technique](https://rpubs.com/sarenseeley/bids-fmriprep-mriqc). 
-This feature may be enabled, using the –use-syn-sdc flag, and will only be applied if fieldmaps are unavailable.” 
+3. --use-syn-sdc: “In the absence of direct measurements of fieldmap data,
+we provide an (experimental) option to estimate the susceptibility distortion
+based on the [ANTs symmetric normalization (SyN) technique](https://rpubs.com/sarenseeley/bids-fmriprep-mriqc).
+This feature may be enabled, using the –use-syn-sdc flag, and will only be applied if fieldmaps are unavailable.”
 
 4. --ignore slicetiming option disable slice timing
 
@@ -148,13 +148,13 @@ This feature may be enabled, using the –use-syn-sdc flag, and will only be app
 
 #### 1. [Anatomical Scans](https://fmriprep.readthedocs.io/en/1.1.0/outputs.html)
 
-1. T1 Segmentation: region of interest (gray CSF and white matter) 
-and of no interest ( white matter/WM and cerebral spinal fluid-filled spaces/CSF) 
+1. T1 Segmentation: region of interest (gray CSF and white matter)
+and of no interest ( white matter/WM and cerebral spinal fluid-filled spaces/CSF)
 2. T1 to MNI Registration
 
 #### 2. Functional Scans
 
-1. Skull stripped EPI 
+1. Skull stripped EPI
 2. EPI to T1 Registration
 3. aCompCor Mask. CSF and white matter ROIs were combined to form the anatomical noise ROI.
 The aCompCor means the application of CompCor with the anatomical noise ROI (Behzadi et al., 2007).
@@ -170,36 +170,36 @@ The aCompCor means the application of CompCor with the anatomical noise ROI (Beh
 1. Signal: *space-MNI152NLin2009cAsym_preproc_bold.nii.gz
 配准到MNI152NLin2009cAsym模板，没有平滑的4D功能像数据
 2. Noise Covariates: * desc-confounds_regressors.tsv文件中包括头动参数（6个），以及根据aCompCor得到的CSF, WM 还有CSF-WM combined mask内的信号。
-[这些信号需要在个体或组分析中进行回归以进一步消除其影响](https://neurostars.org/t/confounds-from-fmriprep-which-one-would-you-use-for-glm/326/6)。 
-    1. Confounds on 1st level: 6 motion parameters (trans_xyz平动3个方向,rot_xyz转动3个方向), 
-	[Frame-Wise Displacement(FD)](https://dartbrains.org/features/notebooks/10_GLM_Single_Subject_Model.html), and aCompCor。**！！！[When using AROMA-denoised data (*_bold_space-MNI152NLin2009cAsym_variant-smoothAROMAnonaggr_preproc.nii files), 
+[这些信号需要在个体或组分析中进行回归以进一步消除其影响](https://neurostars.org/t/confounds-from-fmriprep-which-one-would-you-use-for-glm/326/6)。
+    1. Confounds on 1st level: 6 motion parameters (trans_xyz平动3个方向,rot_xyz转动3个方向),
+	[Frame-Wise Displacement(FD)](https://dartbrains.org/features/notebooks/10_GLM_Single_Subject_Model.html), and aCompCor。**！！！[When using AROMA-denoised data (*_bold_space-MNI152NLin2009cAsym_variant-smoothAROMAnonaggr_preproc.nii files),
 	you would likely NOT want to regress out motion-related variables from confounds.tsv as this may reintroduce motion.](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html#aroma) **
     2. Confunds on group level: mean FD(for both task and rest).
 3. [Discussion](https://neurostars.org/t/fmriprep-which-regressors-for-best-global-signal-regression-comparison/1878/2)
-	
+
 ### 使用AROMA方法
 
-1. Signal: *space-MNI152NLin2009cAsym_desc-smoothAROMAnonaggr_bold.nii.gz 
+1. Signal: *space-MNI152NLin2009cAsym_desc-smoothAROMAnonaggr_bold.nii.gz
 配准到MNI152NLin2009cAsym模板，smooth并使用AROMA方法进行了降噪（主要是头动噪声？）后的4D功能像数据。
 2. Noise: *desc-confounds_regressors.tsv [注意，因为AROMA已经利用ICA的方法去除了头动噪声，GLM中不再需要加入头动参数，只需要CSF,WM的信号以及线性趋势的信号即可](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html#aroma)。
-3. 为什么CSF,WM的信号可以表征噪声？Since neural activation is localized to gray matter, 
+3. 为什么CSF,WM的信号可以表征噪声？Since neural activation is localized to gray matter,
 white matter and CSF regions should primarily reflect signals of non-neural origin, such as
 cardiac and respiratory fluctuations. (Behzadi et al., 2007).
 4. 具体指标： *desc-confounds_regressors.tsv中a_comp_cor_00到a_comp_cor_04，即aCompCor的前五个成分。
 fmriprep生成的confounds文件中，aCompCor的成分是按照贡献大小从高到低排列的。
 所以前五个成分贡献了大部分的噪声？？？Determining the optimal number of PCs is an open question (e.g. fixed number vs. %of variance)
-	
+
 ### 区分ComCorr和AROMA两种降噪方法
 
 1. ComCorr（PCA方法）针对的主要是cardiac and respiratory related-noises；
 2. AROMA（ICA方法）针对的主要是motion artifacts. "In contrast to generic
 ICA-based denoising strategies (Salimi-Khorshidi et al., 2014), we here
 focus specifically on the classification and removal of components that
-specifically relate to head motion. (Raimon H.R. Pruim 2015)" 
-	
-	
-	
-	
+specifically relate to head motion. (Raimon H.R. Pruim 2015)"
+
+
+
+
 # 1st by SPM12
 
 ### fMRI model specification
@@ -235,7 +235,7 @@ data
 best fit to the data
 
 ### [个体分析结果的检查](http://www.bobspunt.com/resources/teaching/single-subject-analysis/)。SPM/Design，检查项目包括：
-    
+
 1. 时域（Time domain）感兴趣条件的协变量的模拟信号是否存在重叠现象
 2. 频域（frequency domain）感兴趣条件的频率是否健在？是否受到预处理denosing技术和
 	一阶分析高通滤波的影响？
@@ -246,7 +246,7 @@ best fit to the data
 
 1. DAPABI推荐Permutation test with Threshold-Free Cluster Enhancement (TFCE)
 2. [SPM有专门进行TFCE的工具包](https://www.fil.ion.ucl.ac.uk/spm/ext/)
-3. [SPM TFCE](http://www.neuro.uni-jena.de/tfce/) 
+3. [SPM TFCE](http://www.neuro.uni-jena.de/tfce/)
 此工具包还可以加载额外的mask进行small volume correction。
 Please keep in mind that the mask image has the same dimensions such as your data.
 4. [使用完TFCE后，依然要用FWE或FDR对置换检验的结果进行多重检验校正。两种方法都可以使用。](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=spm;206ac0f8.1310)
@@ -254,7 +254,7 @@ Please keep in mind that the mask image has the same dimensions such as your dat
 所以这里应该选择TFCE statistic/FWE.
 
 # 2st analysis by SPM12
-	
+
 ## FAQ and Tips
 
 1. 使用FSL进行一阶分析时，因为涉及反卷积计算，耗时甚多。[官方论坛推荐使用OpenBLAS多线程加速解决这一问题](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=FSL;4f8a92e.1902)。
