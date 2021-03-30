@@ -2,7 +2,7 @@
 layout: post
 title:   Writing Course
 date:   2019-03-08 22:10:20
-tags: [Statistics-Writing]
+tags: [Writing]
 ---
 
 # How to Write and Publish a Scientific Paper (Project-Centered Course)
@@ -94,7 +94,7 @@ By asking these quetions and solving them, we can clarify our research question:
 
 * Writing order: write the introduction, conclusion and adstract at last
 * Write for your community!
-* The first sentence of your introduction is very important! 
+* The first sentence of your introduction is very important!
 * Write the abstract and introduction according to the MRCI framwork
   1. M: Motivation - What is the motivation of your topic ? Explain why there is a real gap in the literature ? Why your research question is an interesting one, relevant one or an important one ? Why your research is necessary ? Why no one has done it before ?
   2. R: Results - What are your findings?
@@ -114,18 +114,18 @@ Master how to use Endnote!
    * Preface of your article
    * Plan of your article
  * The structure of abstract: MRCI
- 
- * Check by the following questions:
-    1. Who are the intended readers? 
-	2. What did you do? 
-	3. Why did you do it?
-	4. What happened when you did that? 
-	5. What do your results mean in practice and in theory? 
-	6. What are the key benefits for the readers? 
-	7. What remains unsolved? 
 
-## Week4 After the writing: the check list	
-	
+ * Check by the following questions:
+    1. Who are the intended readers?
+	2. What did you do?
+	3. Why did you do it?
+	4. What happened when you did that?
+	5. What do your results mean in practice and in theory?
+	6. What are the key benefits for the readers?
+	7. What remains unsolved?
+
+## Week4 After the writing: the check list
+
 ### 4.1 How to avoid being boring?
 
 * Common mistakes should be avoided
@@ -143,22 +143,22 @@ Master how to use Endnote!
    4. No illustration
    5. Being too concise
    6. Being too exhaustive
-   
-   
+
+
 
 ### 4.2 The main mistakes to look for: format   
-1. Improper language 
+1. Improper language
 ![统计符号的拼写问题](\images\19-3-8\2019-05-12_181139.bmp)
 [The Grammar of Mathematics: Writing About Variables](https://blog.apastyle.org/apastyle/2011/08/the-grammar-of-mathematics-writing-about-variables.html)
 2. Spelling mistakes
 
-### 4.3 Constructing your checklist	
+### 4.3 Constructing your checklist
 
-Each scientific community and sometimes even journal in the same field have their own particular rules.	
+Each scientific community and sometimes even journal in the same field have their own particular rules.
 
-Your paper should follow the rules! Konw it and follow it.	
+Your paper should follow the rules! Konw it and follow it.
 
-	
+
 ## References
 * How to avoid being boring
 * References (Reading)
@@ -184,10 +184,10 @@ https://www.elsevier.com/connect/8-reasons-i-rejected-your-article
 1. What makes good writing?
     **1. express your idea clearly and effectively (focus on this point)**
 	2. Good writing is elegant and stylish
-2. What makes a good writer? Good training to think logically, 
+2. What makes a good writer? Good training to think logically,
 and a few simple, learnable rules of style
 3. How many steps to be a good writer?
-    1. Reading 
+    1. Reading
 	2. Write
 	3. 'academic' writing habits
 	4. Talk about your research before trying to write about it
@@ -195,9 +195,9 @@ and a few simple, learnable rules of style
 	6. No waiting! Just write it
 	7. Accept that writing is hard for everyone
 	8. Revise, Revise and revise
-	9. Learn how to cut ruthlessly. 
+	9. Learn how to cut ruthlessly.
 	10. Find a good editor!
-	
+
 ## Examples
 
 ### Basic principles
@@ -208,10 +208,9 @@ and a few simple, learnable rules of style
 2. Avoid using nons, and write with verbs. And don't cover up your verbs!
 3. Use the active voice: subject + verb + object
 
-### Cut the clutter	
+### Cut the clutter
 
 1. On well writing by Zinsser William:
 "The secret of good writing is to strip every sentence to its cleanest components.
 Every word that serves no function, every long word that could be shorter, every
 adverb that····that weanken the strength of a sentence"
-	
