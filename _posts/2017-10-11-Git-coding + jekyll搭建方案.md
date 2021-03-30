@@ -2,7 +2,7 @@
 layout: post
 title:  Github 基础
 date:   2017-10-12 23:10:20 +0800
-categories: Programming
+categories: [Programming]
 ---
 # 一、三种网页语言
 ## HTML
@@ -89,7 +89,7 @@ origin    git@github.com:username.git (push
   hexo是一款基于Node.js的静态博客框架。与amwiki的区别在于，hexo只向远程仓库推送本地生成的静态网页，源文件并不推送。所以设置起来很麻烦。
 
   3. jekyll。**推荐！！** 和amwiki类似，比amwiki复杂一点，优点是有较多的主题可以选择。不像amwili只能默认主题。jekyll的原理是把源文件上传到github，由github生成网页，所以跨电脑写作很方便，不用像hexo一样操碎了心。
-  
+
 # 三、 Github/Coding 基本术语
 
 ## 1. 基本存储单位：仓库（repository）
