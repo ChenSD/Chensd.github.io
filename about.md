@@ -16,6 +16,12 @@ permalink: /about/
 * 常用技术: EEG, fMRI
 * Email: csddyx@outlook.com
 
+# 业务合作
+
+
+* ERP-fMRI技术授课，数据分析，结果汇报
+* 中英文论文指导
+
 # Publications
 
 1.	**Chen Shengdong***, Deng Zhongyan*, Xu Yin, Long Quanshan, Yang Jiemin and Yuan Jiajin, Individual Differences in Spontaneous Expressive Suppression Predict Amygdala Responses to Fearful Stimuli: The Role of Suppression Priming, Frontier in Psychology (ISSN:1664-1078), 2017, WOS:000392983500001, SSCI(Q2).     
