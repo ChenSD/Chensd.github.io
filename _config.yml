@@ -6,8 +6,7 @@ email: csddyx@outlook.com
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
 url: ssdd.site
-# 站点页脚的文字
-footer-text: Copyright (c) 2021 所有内容均属原创，转载必须联系本人进行授权
+
 
 plugins:
   - jekyll-seo-tag
