@@ -16,7 +16,7 @@ url: ssdd.site
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: 
+baseurl: /about
 
 
 #
@@ -24,19 +24,19 @@ baseurl:
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: 
+avatar:
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: 
+favicon:
 
 
 # 菜单中的按钮
 navigation:
   - name: 首页
     url: /archive
-  - name: 关于
+  - name: 个人简介
     url: /about
-  - name: 标签
+  - name: 博文
     url: /tags
 
 # 每页的文章数
@@ -46,25 +46,13 @@ paginate: 8
 excerpt_separator: <!-- more -->
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
-footer-links: 
-  weibo:  #请输入你的微博个性域名 https://www.weibo.com/<thispart>
-  behance: # https://www.behance.net/<>
-  dribbble: # https://dribbble.com/<>
-  email: #
-  facebook: #https://www.facebook.com/<>
-  flickr: #https://www.flickr.com/<>
-  github:  #https://github.com/<>
-  instagram: #https://instagram.com/<>
-  linkedin: #https://www.linkedin.com/in/<>
-  pinterest: #https://www.pinterest.com/<>
-  rss: #随便填点啥RSS就能用了
-  stackoverflow: # http://stackoverflow.com/<>
-  tumblr: # https://<username>.tumblr.com
-  twitter: # https://www.twitter.com/<your_twitter_username> 
-  youtube: # channel/<your_long_string> or user/<user-name>
+footer-links:
+  ResearchGate:  https://www.researchgate.net/profile/Shengdong-Chen?ev=hdr_xprf&_sg=8zFF1fSvQSEXybH480TNbKB0IM_AWKVcPivZXk4-mOyRt0kM1K8iLw1h8Q1J0Az0LExwn13i1W2NlkvT0Er7ucMI
+  email: csddyx@outlook.com
+
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2020
+footer-text: Copyright (c) 2021 所有内容均属原创，转载必须联系本人进行授权，侵权必究。
 
 
 # 输入Disqus shortname，即可添加评论区
@@ -112,4 +100,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
