@@ -2,7 +2,7 @@
 layout: post
 title:  Github 基础
 date:   2017-10-12 23:10:20 +0800
-categories: [Programming]
+categories: Programming
 ---
 # 一、三种网页语言
 ## HTML

@@ -2,7 +2,7 @@
 layout: post
 title:   数据处理的利器HPC和Singularity
 date:   2019-06-6 22:10:20
-tags: [toolbox]
+categories: toolbox
 ---
 
 # What HPC and Container technology (Docker and Singularity)
@@ -29,7 +29,7 @@ Singularity是在劳伦斯伯克利国家实验室专门为HPC和深度学习(DL
 * 基于BIDS，科研雷锋们开发了许多BIDS APP。
 * A BIDS App is a container image capturing a neuroimaging pipeline that takes a BIDS-formatted dataset as input. Since the input is a whole dataset, apps are able to combine multiple
 modalities, sessions, and/or subjects, but at the same time need to implement ways to query
-input datasets (Gorgolewski, K. J., et al., 2017). 
+input datasets (Gorgolewski, K. J., et al., 2017).
 * BIDS Apps主要基于Docker（for本地电脑或云端）和Singularity（for HCP）两种容器化技术来制作工具包。
 * [BIDS APPs](https://github.com/BIDS-Apps)
 * 可以在docker hub上查询这些APP的docker镜像

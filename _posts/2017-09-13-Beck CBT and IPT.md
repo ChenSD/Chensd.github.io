@@ -2,8 +2,9 @@
 layout: post
 title:  Beck CBT, IPT and EFT
 date:   2017-09-13
-tags: [Disorders]
+categories: Disorders
 ---
+
 # 14th day
 
 * Cognitive Therapy and Interpersonal Psychotherapy: 30 Years Later

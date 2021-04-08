@@ -2,7 +2,7 @@
 layout: post
 title:   Writing Course
 date:   2019-03-08 22:10:20
-tags: [Writing]
+categories: Writing
 ---
 
 # How to Write and Publish a Scientific Paper (Project-Centered Course)

@@ -2,7 +2,7 @@
 layout: post
 title:  Rumination相关理论和研究
 date:   2017-09-19 23:10:20 +0800
-tags: [Disorders]
+categories: Disorders
 toc: true
 ---
 

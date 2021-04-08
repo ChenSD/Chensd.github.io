@@ -2,7 +2,7 @@
 layout: post
 title:   基于BIDS的fMRI数据处理流程和代码
 date:   2019-06-2 22:10:20
-tags: [toolbox]
+categories: toolbox
 ---
 
 # 数据采集-整理和分析

@@ -2,7 +2,7 @@
 layout: post
 title:  Brain Networks
 date:   2017-09-07
-tags: [Brain]
+categories: Brain
 comments: true
 toc: true
 ---

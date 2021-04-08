@@ -2,7 +2,7 @@
 layout: post
 title:   PostfMRIprocessing
 date:   2019-06-9 22:10:20
-tags: [toolbox]
+categories: toolbox
 ---
 
 ## FSL
@@ -12,7 +12,7 @@ tags: [toolbox]
 3. https://mumfordbrainstats.tumblr.com/post/166054797696/feat-registration-workaround
 4. [an example Nipype workflow for post-fMRIPrep first- and second-level models in FSL](https://github.com/poldracklab/ds003-post-fMRIPrep-analysis)
 
-# Nipype 
+# Nipype
 
 1. [Nipype org](https://nipype.readthedocs.io/en/latest/)
 2. [Nipype manual](http://miykael.github.io/nipype-beginner-s-guide/)
@@ -30,8 +30,8 @@ tags: [toolbox]
 
 1. 视频教程
 
-https://youtu.be/Nkt6hsY-T0s 
-https://youtu.be/GncNH7l6OOQ 
+https://youtu.be/Nkt6hsY-T0s
+https://youtu.be/GncNH7l6OOQ
 
 
 2. [codes](https://github.com/arash-ash/nipype_tutorial)
@@ -50,9 +50,9 @@ aa的优点就是分离了配置参数和运行命令，而如今基于BIDS的SP
 类似于fmriprep，SPM BIDS App的运行也分为以下几步
 
 1. 如果没有安装，docker pull bids/SPM
-2. [usage](https://github.com/BIDS-Apps/aa): run <bids_dir> <output_dir> {participant|group} 
-           [--participant_label <participant_label>] 
-           [--freesurfer_license <license_file>] 
+2. [usage](https://github.com/BIDS-Apps/aa): run <bids_dir> <output_dir> {participant|group}
+           [--participant_label <participant_label>]
+           [--freesurfer_license <license_file>]
            [--connection <pipeline to connect to>]
            [<tasklist> <user_customisation>]
 3. docker run -ti --rm \
@@ -71,7 +71,7 @@ aa的优点就是分离了配置参数和运行命令，而如今基于BIDS的SP
 	--rm自动移除已经存在的容器（断开联系而非删除容器本身）（默认）；
 	--volume/-v The -v flag mounts the current working directory into the container（需要修改）.
 5. [BIDS Tools in SPM](https://en.wikibooks.org/wiki/SPM/BIDS)
-	
+
 ## SPM BIDS APP 测试感受 (baybay6)
 
 1. The biggest problem is that SPM is not supported of compressed NIfTI files (.nii.gz),
