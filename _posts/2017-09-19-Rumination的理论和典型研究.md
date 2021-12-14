@@ -8,6 +8,8 @@ toc: true
 
 # Rumination （冗思）
 
+* 注意措辞。国内心理学报普遍使用反刍作为rumination，而非冗思。
+
 ## 1. 定义
 
 * 虽然冗思的定义，目前不同的理论还存在争议。但至少有一点是确认的，就是冗思是自我加工（self-focus processing）的一种。
@@ -154,3 +156,9 @@ for Depression
 * 实验结果：
       1. 除了接收策略，其他策略通过了操作有效性检验；
       2. Results showed that positive reappraisal (i.e., thinking about the benefits and personal growth) caused a significantly larger increase in positive affect and decrease in negative affect compared to rumination, distancing, and acceptance.
+
+### 实验操纵冗思
+
+1. Cooney, R. E., Joormann, J., Eugène, F., Dennis, E. L., & Gotlib, I. H. (2010). Neural correlates of rumination in depression. Cognitive, Affective, & Behavioral Neuroscience, 10(4), 470-478. 引用403
+2. Hilt, L. M., & Pollak, S. D. (2012). Getting out of rumination: Comparison of three brief interventions in a sample of youth. Journal of abnormal child psychology, 40(7), 1157-1165.
+3. Burkhouse, K. L., Jacobs, R. H., Peters, A. T., Ajilore, O., Watkins, E. R., & Langenecker, S. A. (2017). Neural correlates of rumination in adolescents with remitted major depressive disorder and healthy controls. Cognitive, Affective, & Behavioral Neuroscience, 17(2), 394-405.
