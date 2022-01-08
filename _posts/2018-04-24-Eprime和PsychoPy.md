@@ -38,15 +38,43 @@ categories: Programming
 * E-studio中有多种功能的控件，能够实现对不同实验对象的控制。例如TextDisplay控件可以对文本对象进行控制。
 * 对象属性的表示方式为“name.attribute”，name为控件的名称，attribute为属性的名称。例如TextDisplay4.duration表示TextDisplay4这一对象的duration属性。
 * 注释为“'”符号。
+* Slide的坐标体系。X控制左右方向，Y控制上下方向。X从左到右的坐标为0-1000. 所以如果在一个slide控件上左右各呈现一张图片，两种图片的横坐标应该为250, 750。这样就是对称的。
+Y
 
 ### 创建属性SetAttrib
-* 创建属性并赋值。除了控件默认的属性，还可以利用**SetAttrib**创建自定义的属性并赋值。具体而言SetAttrib可以将创建的属性置于实验环境（context）中，因此其可以被指定，修改和引用。“c”默认为环境对象（Context）的缩写，不需要单独定义。例如：
+* 创建属性并赋值。除了通过修改Logging页面中的内容来设定在一次刺激中要记录哪些数据，还可以利用**SetAttrib**创建自定义的属性并赋值，以实现[自定义记录数据](https://www.jianshu.com/p/5458b399790b)。
+* 函数格式：
+``“c.SetAttrib [数据名], [数据内容]”``
+* 具体而言SetAttrib可以将创建的属性置于实验环境（context）中，因此其可以被指定，修改和引用。“c”默认为环境对象（Context）的缩写，不需要单独定义。例如：
     ``' Set TotalTrial =10
     c.SetAttrib "TotalTrial", "10"``
-    将TotalTrial设置为contex对象的一个属性，并赋值为10. 注意set函数虽然也能给变量赋值，但其在其他控件中无法被引用。
-* 属性的创建必须在其被引用之前，否则就会出现“the attribute does not exist”的runtime error。
-* SetAttrib的引用问题。使用SetAttrib创建的变量只能在创建的环境中被引用，例如TotalTrial是在block水平上被创建的，如block1，那么其就只能在block1中被引用。
+    将TotalTrial设置为contex对象的一个属性，并赋值为10.
+* 注意set函数只能给变量赋值用以记录，但其在其他控件中无法被引用，只能在当前inline中调用。使用SetAttrib创建的变量只能在创建的环境中被引用，例如TotalTrial是在block水平上被创建的，如block1，那么其就只能在block1中被引用。
+* 属性的必须先创建，再引用，否则就会出现“the attribute does not exist”的runtime error。
 * context属性分为几个层级，session level context > Block level context > Trail level context.
+
+### 变量的引用
+
+* 第一种变量是自己利用SetAttrib自定义的变量，定义后可以在创建的局部环境中引用。
+* 第二种是引用list中自定义的property。[轻松学习E-Prime(二十八)：在Inline中读取List中的变量](https://www.jianshu.com/p/99d22c0241a6)
+* 引用格式: ``name2=c.GetAttrib("name1")``
+* 举例，slide1中随机呈现了左右两张图片，需要判断左边图片的属性：
+  ``Set SIleft = CSlideImage(Slide1.States("Default").Objects("Image1"))
+    If SIleft.Filename = c.getattrib("posipic") Then
+       c.setattrib"ttrpos",nk
+   Else
+       c.setattrib"ttrneutral",nk
+   End If   ``
+
+### Slide中对象属性的调用
+
+1. 命令格式：``Set <SlideStimCollection> = SlideState.Objects``
+2. 调用图片属性：``SImage = CSlideImage(Slide1.States("Default").Objects("Image1"))
+SImage.Filename=”pic2.jpg”
+SImage.load``
+3. 调用txt属性：``Set SText = CSlideText(Slide1.States("Default").Objects("Text1"))
+SText.Text=”这是页面1”``
+
 
 ### Global Variables and Trial Level Variables
 
